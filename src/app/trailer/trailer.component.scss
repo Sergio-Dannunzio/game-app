@@ -1,0 +1,38 @@
+.content-trailer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #000000;
+    height: 140vh;
+    color: white;
+      h1 {
+        margin-bottom: 2rem;
+        font-family: Benne, Georgia, serif;
+        font-size: 78px;
+        font-weight: 400;
+      }
+      h3 {
+        width: 30%;
+        font-size: 24px;
+        font-family: Benne, Georgia, serif;
+        font-weight: lighter;
+      }
+      .w-100{
+        animation: scaleVideo linear;
+      animation-timeline: view();
+      animation-range-start: entry;
+      animation-range-end: 650px;
+  
+      }
+  
+    }
+  
+    @keyframes scaleVideo {
+      from{
+        scale: 0.3;
+      }to{
+        scale: 1;
+      }
+    }

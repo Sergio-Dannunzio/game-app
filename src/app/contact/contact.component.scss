@@ -1,0 +1,130 @@
+.container-contact {
+    padding: 4rem 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 8em;
+    
+    .header-contact{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      font-size: 40px;
+      font-weight: lighter;
+    }
+    
+    p{
+      font-size: 28px;
+      font-family: Benne, Georgia, serif;
+      line-height: 1.25;
+      width: 40%;
+    }
+    
+    .sign-desc{
+      font-size: 24px;
+    }
+    
+    form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100vw;
+      height: 50%;
+      font-size: 20px;
+      
+            div{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              
+              .main{
+                display: block;
+                position: relative;
+                padding-left: 25px;
+                cursor: pointer;
+                margin: 0;
+                margin-top: 4em;
+                font-size: 12px;
+                height: 18px;
+              }
+            }
+    }
+
+    .main input[type=checkbox] {
+        visibility: hidden;
+    }
+
+    .checkbox-container {
+        position: absolute;
+        top: -8px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
+
+
+    /* Checkmark */
+    .checkbox-container::after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 7px;
+        top: 3px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    /* Display checkmark when checked */
+    .main input:checked~.checkbox-container::after {
+        display: block;
+    }
+
+    .btnSend{
+      background-color: black;
+      border: 1px solid #fff;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 3em;
+      margin-left: 24px;
+      cursor: pointer;
+    }
+    
+    form input{
+      width: 40%;
+      height: 52px;
+      margin-bottom: .5em;
+      background-color: black;
+      border: none;
+      border-bottom: 1px;
+      border-bottom-style: solid;
+      border-image: linear-gradient(to right,black, gray ,gray, black) 30;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 20px;
+      font-family: Benne, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+    
+    textarea:focus, input:focus{
+      outline: none;
+    }
+}
+

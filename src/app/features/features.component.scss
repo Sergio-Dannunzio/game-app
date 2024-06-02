@@ -1,0 +1,78 @@
+.content{
+    background-color: black;
+    width: 100vw;
+    height: 120vh;
+    padding-top: 6em;
+    color: white;
+  
+  }
+  
+  .imgRebellion{
+    background-image: url(../assets/img/Join-the-rebellion_compress-1209x680.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 60vw;
+    height: 75vh;
+  }
+  
+  .features-image{
+    display: flex;
+  
+  }
+  
+  .title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 4em;
+  }
+  
+  .feature{
+    width: 600px;
+    height: 90px;
+    margin-left: 4em;
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: blueviolet solid 1px;
+  }
+  
+  .feature2{
+    width: 600px;
+    height: 200px;
+    margin-left: 4em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: blueviolet solid 1px;
+  }
+  
+  .feature div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .feature p{
+    animation: fadeIn 4s, image_blur 1.5s;
+  }
+  
+  .noShow{
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes image_blur {
+    0% { -webkit-filter: blur(10px);}
+    50% { -webkit-filter: blur(5px);}
+    100% { -webkit-filter: blur(0px);}
+  }
+  
+  
