@@ -3,28 +3,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 2rem;
     background-color: #000000;
-    height: 140vh;
+    width: 100vw;
     color: white;
       h1 {
-        margin-bottom: 2rem;
+        margin-bottom: 1em;
         font-family: Benne, Georgia, serif;
-        font-size: 78px;
+        font-size: 32px;
         font-weight: 400;
+        text-align: center;
       }
       h3 {
-        width: 30%;
-        font-size: 24px;
+        width: 80vw;
+        font-size: 20px;
+        margin: 0;
         font-family: Benne, Georgia, serif;
         font-weight: lighter;
+        text-align: center;
       }
       .w-100{
+        width: 100%;
+        height: 56.25%;
+        margin-top: 4em;
         animation: scaleVideo linear;
-      animation-timeline: view();
-      animation-range-start: entry;
-      animation-range-end: 650px;
-  
+        animation-timeline: view();
+        animation-range-start: entry;
+        animation-range-end: 650px;
       }
   
     }
@@ -35,4 +39,20 @@
       }to{
         scale: 1;
       }
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+      .content-trailer{
+
+        h1{
+          font-size: 64px;
+        }
+
+        h3{
+          width: 30%;
+          font-size: 24px;
+        }
+      }
+
     }

@@ -6,43 +6,40 @@
     text-align: center;
     justify-content: center;
     width: 100vw;
-    height: 80vh;
-    margin-bottom: 8em;
+    min-height: 50vh;
     
     .header-contact{
-      width: 100vw;
+      max-width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
     h1{
-      font-size: 40px;
+      font-size: 24px;
       font-weight: lighter;
     }
     
     p{
-      font-size: 28px;
+      font-size: 18px;
       font-family: Benne, Georgia, serif;
       line-height: 1.25;
-      width: 40%;
+      width: 100%;
     }
     
-    .sign-desc{
-      font-size: 24px;
-    }
     
     form{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      width: 100vw;
+      max-width: 100vw;
       height: 50%;
       font-size: 20px;
       
             div{
               display: flex;
+              flex-direction: column;
               justify-content: center;
               align-items: center;
               
@@ -55,6 +52,7 @@
                 margin-top: 4em;
                 font-size: 12px;
                 height: 18px;
+
               }
             }
     }
@@ -103,12 +101,11 @@
       display: inline-block;
       font-size: 16px;
       margin-top: 3em;
-      margin-left: 24px;
       cursor: pointer;
     }
     
     form input{
-      width: 40%;
+      width: 80%;
       height: 52px;
       margin-bottom: .5em;
       background-color: black;
@@ -125,6 +122,19 @@
     
     textarea:focus, input:focus{
       outline: none;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+      form input{
+        width: 40%;
+      }
+      form{
+        div{
+          flex-direction: row;
+        }
+      }
+
     }
 }
 

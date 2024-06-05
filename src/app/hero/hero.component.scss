@@ -27,7 +27,6 @@
       /* overflow: hidden; */
       position: relative;
       z-index: 0;
-      min-height: 190vh;
       width: 100vw;
       display: grid;
       grid-template-areas: "stack";
@@ -66,45 +65,50 @@
     }
     
     .img0 {
+      display: block;
       position: absolute;
       z-index: 6;
-      height: 500px;
-      width: 60vw;
+      width: 70%;
+      height: 0;
+      padding-top: 26.32%;
       animation: moveDown 2s;
+      right:15%;
+      top:8%;
     }
     
     .img1 {
       position: absolute;
       z-index: 1;
-      width: 100vw;
-      height: 150vh;
+      width: 100%;
+      height: 0;
+      padding-top: 96%;
       object-fit: cover;
     }
     
     .img2 {
+      width: 100%;
+      height: 0;
+      padding-top: 96%;
       --parallax-speed: 1.2;
       z-index: 2;
     }
     
     .img3 {
+      width: 100%;
+      height: 0;
+      padding-top: 96.02%;
       --parallax-speed: 1.5;
       z-index: 3;
     }
     
     .img4 {
+      width: 100%;
+      height: 0;
+      padding-top: 96%;
       --parallax-speed: 1.2;
       z-index: 4;
     }
     
-    .parallax__jax {
-      --parallax-speed: 10;
-      z-index: 5;
-    }
-    
-    .parallax__rays {
-      --parallax-speed: 50;
-      z-index: 3;
-    }
     
     .main-content {
       position: relative;
